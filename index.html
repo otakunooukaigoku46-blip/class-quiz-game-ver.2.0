@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>角色猜謎遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>猜猜這是什麼？</h1>
+
+  <div id="progress">第 0 題 / 共 0 題</div>
+
+  <div id="hint-buttons">
+    <button onclick="showHint(0)">提示 1</button>
+    <button onclick="showHint(1)">提示 2</button>
+    <button onclick="showHint(2)">提示 3</button>
+    <button onclick="showHint(3)">提示 4</button>
+    <button onclick="showHint(4)">提示 5</button>
+  </div>
+
+  <div id="hint-display"></div>
+  <div id="hint-counter">已使用提示：0 / 5</div>
+
+  <div class="controls">
+    <button onclick="toggleAnswer()">顯示 / 隱藏答案</button>
+    <button onclick="nextQuestion()">下一題</button>
+  </div>
+
+  <div id="answer" class="hidden"></div>
+
+ <script src="script.js?ver=2"></script>
+</body>
+</html>
